@@ -1,3 +1,5 @@
+***Approach / Solution :***
+
 ── Ping the server by Hostname and IP Address
 │ ├── False: Above Troublshooting Diagram "Server is not reachable or cannot connect"
 │ ├── True: Check the service availabilty by using telnet command with port
