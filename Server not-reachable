@@ -1,0 +1,21 @@
+***Approach / Solution :***
+.
+├── Ping the server by Hostname and IP Address
+│ ├── Hostname/IP Address is pingable
+│ │ ├── Issue might be on the client side as server is reachable
+│ ├── Hostname is not pingable but IP Address is pingable
+│ │ ├── Could be the DNS issue
+│ │ │ ├── check /etc/hosts
+│ │ │ ├── check /etc/resolv.conf
+│ │ │ ├── check /etc/nsswitch.conf
+│ │ │ ├── (Optional) DNS can also be defined in the /etc/sysconfig/network-scripts/ifcfg-<interface>
+│ ├── Hostname/IP Address both are not pingable
+│ │ ├── Check the other server on its same network to see if there is Network side access issue or other overall something bad
+│ │ │ ├── False: Issue is not overall network side but its with that host/server
+│ │ │ ├── True: Might be overall network side issue
+│ │ ├── Logged into server by Virtual Console, if the server is PoweredON. Checkthe uptime
+│ │ ├── Check if the server has the IP, and has UP status of Network interface
+│ │ │ ├── (Optional) Also check IP related information from /etc/sysconfig/network-scripts/ifcfg-<interface>
+│ │ ├── Ping the gateway, also check routes
+│ │ ├── Check Selinux, Firewall rules
+│ │ ├── Check physical cable conn
