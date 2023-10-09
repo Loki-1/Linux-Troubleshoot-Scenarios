@@ -1,0 +1,9 @@
+***Approach / Solution :***
+
+├── One of the error that cause the system unable to BOOT UP
+├── Check /var/log/messages, dmesg and other log files
+├── If we have a badsector logs, we have to run fsck
+│ ├── True:
+│ │ ├── reboot the system into resuce mode as booting it from CDROM by applying ISO
+│ │ ├── proceed with option 1, which mount the original root filesystem under /mnt/sysimage
+│ │ ├── edit fstab entries or create a new file with the help of blkid and reboot
