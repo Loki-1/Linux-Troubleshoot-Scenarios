@@ -1,3 +1,26 @@
 ***Approach / Solution :***
 
-
+├── Types
+│ ├── Cache (L1, L2, L3)
+│ ├── RAM
+│ │ ├── Usage
+│ │ │ ├── #free -h
+│ │ │ │ ├── Total (Total assigned memory)
+│ │ │ │ ├── Used (Total actual used memory)
+│ │ │ │ ├── Free (Actual free memory)
+│ │ │ │ ├── Shared (Shared Memory)
+│ │ │ │ ├── Buff/Cache (Pages cache memory)
+│ │ │ │ ├── Available (Memory can be freed)
+│ │ │ ├── /proc/meminfo
+│ │ │ │ ├── file active
+│ │ │ │ ├── file inactive
+│ │ │ │ ├── anon active
+│ │ │ │ ├── anon inactive
+│ ├── Swap (Virtual Memory)
+├── Resolution
+│ ├── Identify the processes that are using high memory using top, htop, ps etc.
+│ ├── Check the OOM in logs and also check if there is a memory commitment in sysctl.conf
+│ ├── Kill or restart the process/service
+│ ├── prioritize the process using nice
+│ ├── Add/Extend the swap space
+│ ├── Add more physical more RAM
