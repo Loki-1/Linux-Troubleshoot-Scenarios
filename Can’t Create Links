@@ -1,0 +1,6 @@
+├── Reasons and Resolution
+│ ├── Target directory/File does not exist
+│ ├── Pathname conflict: relative vs absolute path - (should be complete path)
+│ ├── Parent directory permission/ownership
+│ ├── Target file permission/ownership - (as there should be read permission)
+│ ├── Hidden directory/file
