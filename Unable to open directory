@@ -1,1 +1,8 @@
+***Approach / Solution :***
 
+├── Reasons and Resolution
+│ ├── Directory does not exist
+│ ├── Pathname conflict: relative vs absolute path
+│ ├── Parent directory permission/ownership
+│ ├── Doesn't have executable permission on target directory
+│ ├── Hidden directory
