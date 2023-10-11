@@ -1,3 +1,13 @@
 ***Approach / Solution :***
 
-
+├── Troubleshooting and Resolution
+│ ├── command
+│ │ ├── Could be the system related command which non root user does not have the access
+│ │ ├── Could be the user defined script/command
+│ ├── Troubleshooting
+│ │ ├── permission/ownership of the command/script
+│ │ ├── sudo permission
+│ │ ├── absolute/relative path of command/script
+│ │ ├── not defined in user $PATH variable
+│ │ ├── command is not installed
+│ │ ├── command library is missing or deleted
