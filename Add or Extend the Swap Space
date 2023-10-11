@@ -1,2 +1,8 @@
 ***Approach / Solution :***
 
+├── Due to running out of memory, we would need to add more swap space
+│ ├── Create a file with #dd, as it will reserve the blocks of disk for swap file
+│ ├── Set permission 600 and give root ownership
+│ ├── #mkswap
+│ ├── Now Turned swap on #swapon
+│ ├── fstab entry for persistent
