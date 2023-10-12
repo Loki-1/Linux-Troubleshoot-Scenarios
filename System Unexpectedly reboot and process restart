@@ -11,12 +11,10 @@
 │ │ │ ├── To prevent high stress on system resources
 │ │ │ ├── If application causing stress, so it will restart or terminate
 │ ├── Troubleshooting
-│ │ ├── After logged in, check the status by using commands like uptime, top,
-dmesg, journalctl, iostat -xz 1
+│ │ ├── After logged in, check the status by using commands like uptime, top, dmesg, journalctl, iostat -xz 1
 │ │ ├── syslog.log, boot.log, dmesg, messages.log etc
 │ │ ├── custom log path of applicatoin
-│ │ ├── if not completely accessible, so take the virutal console like from ILO,
-IDRAC etc
+│ │ ├── if not completely accessible, so take the virutal console like from ILO, IDRAC etc
 │ │ ├── open a case and reach out a vendor
 └── ...
 
