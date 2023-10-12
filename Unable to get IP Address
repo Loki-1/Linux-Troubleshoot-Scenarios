@@ -1,2 +1,16 @@
 *** Approach / Solution :***
 
+├── IP Assignment Methods
+│ ├── DHCP
+│ │ ├── Fixed Allocation
+│ │ ├── Dynamic Allocation
+│ ├── Static
+├── Troubleshooting
+│ ├── check network setting from virtualization environment like VMware, VirtualBox
+or etc
+│ ├── check the IP address is assigned or not
+│ ├── check the NIC status from host side using #lspci, #nmcli etc
+│ ├── restart network service
+└── ...
+Issue
+
