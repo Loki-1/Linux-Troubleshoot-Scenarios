@@ -2,3 +2,9 @@
 
 ├── Troubleshooting
 │ ├── The best option is to create the ACL file of Dir/Files before changing the permissions in bulk
+│ │ ├── Create the acl file before changing the permission (or backup the file
+permission): ~$ getfacl -R <dir> > permissions.acl
+│ │ ├── Restore File Permissions: ~$ setfacl --restore=permissions.acl
+│ ├── Restore from the VM Snapshot (But not always a good option for production)
+│ ├── Rebuild the VM (this option is safe for future)
+└── ...
