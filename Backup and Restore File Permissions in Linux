@@ -1,1 +1,5 @@
 *** Approach / Solutions : ***
+
+├── Troubleshooting
+│ ├── The best option is to create the ACL file of Dir/Files before changing the
+permissions in bulk
